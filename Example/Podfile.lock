@@ -1,0 +1,22 @@
+PODS:
+  - Nimble (7.0.1)
+  - PlayKitUtils (0.1.0)
+  - Quick (1.1.0)
+
+DEPENDENCIES:
+  - Nimble (= 7.0.1)
+  - PlayKitUtils (from `../`)
+  - Quick (= 1.1.0)
+
+EXTERNAL SOURCES:
+  PlayKitUtils:
+    :path: ../
+
+SPEC CHECKSUMS:
+  Nimble: 657d000e11df8aebe27cdaf9d244de7f30ed87f7
+  PlayKitUtils: d866b92cae057d456ab193e0f5f36714da86023e
+  Quick: dafc587e21eed9f4cab3249b9f9015b0b7a7f71d
+
+PODFILE CHECKSUM: 2f0aa12007fde6222d18a26e3eaee33766a7fcdf
+
+COCOAPODS: 1.3.1
