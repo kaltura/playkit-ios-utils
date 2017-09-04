@@ -35,6 +35,7 @@ class TimerExtensionTests: QuickSpec {
                     value += 1
                     print("current value: \(value)")
                 }
+                // timeout is 1 then we will able to increase the value 4 times.
                 expect(value).toEventually(equal(4), timeout: 1)
             }
         }
