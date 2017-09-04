@@ -9,7 +9,7 @@
 import Foundation
 
 /// `SynchronizedProperty` will be used as a property with synchronized protection for getting and setting it value.
-/// 
+/// The value change observe will only fire on different value from current one, if the same value is received the value won't be set. 
 /// ````
 /// // creating the property
 /// var state = SynchronizedProperty<MyState>(initialValue: .new)
@@ -25,8 +25,8 @@ public final class SynchronizedProperty<Value: Equatable> {
     private let synchronizedQueue: DispatchQueue
     private var _value: Value
     private var valueChangedHandler: ((Value) -> Void)?
-    private var onChangeDispatchQueue = DispatchQueue.main
     
+    /// The value of the synchronized property
     public var value: Value {
         get {
             return synchronizedQueue.sync {
@@ -37,9 +37,7 @@ public final class SynchronizedProperty<Value: Equatable> {
             synchronizedQueue.sync {
                 if self._value != newValue {
                     self._value = newValue
-                    onChangeDispatchQueue.async {
-                        self.valueChangedHandler?(newValue)
-                    }
+                    self.valueChangedHandler?(newValue)
                 }
             }
         }
@@ -54,10 +52,8 @@ public final class SynchronizedProperty<Value: Equatable> {
     /// observe the changes of the value on the selected dispatch queue.
     ///
     /// - Parameters:
-    ///   - observeOn: the dispatch queue to observe on.
     ///   - handler: the on change handler to be called when the value changes.
-    public func onChange(observeOn onChangeDispatchQueue: DispatchQueue = DispatchQueue.main, handler: ((Value) -> Void)?) {
-        self.onChangeDispatchQueue = onChangeDispatchQueue
+    public func onChange(handler: ((Value) -> Void)?) {
         self.valueChangedHandler = handler
     }
 }

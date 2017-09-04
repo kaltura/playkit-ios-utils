@@ -39,10 +39,10 @@ class SynchronizedPropertyTests: QuickSpec {
                 }
                 
                 it("can observe changes on value") {
-                    synchronizedProperty.value = .test2
-                    synchronizedProperty.onChange(handler: { (test) in
+                    synchronizedProperty.onChange { (test) in
                         expect(test).to(equal(TestEnum.test2))
-                    })
+                    }
+                    synchronizedProperty.value = .test2
                 }
             }
             
@@ -67,10 +67,23 @@ class SynchronizedPropertyTests: QuickSpec {
                 
                 it("can observe changes on value") {
                     let value = 2
-                    synchronizedProperty.value = value
                     synchronizedProperty.onChange(handler: { (test) in
                         expect(test).to(equal(2))
                     })
+                    synchronizedProperty.value = value
+                }
+                
+                it("can observe multiple changes on value") {
+                    var value = 2
+                    synchronizedProperty.onChange { (test) in
+                        print("on change value: \(test), current value: \(value)")
+                        expect(test).to(equal(value))
+                    }
+                    synchronizedProperty.value = 2
+                    value = 3
+                    synchronizedProperty.value = 3
+                    value = 4
+                    synchronizedProperty.value = 4
                 }
             }
         }
