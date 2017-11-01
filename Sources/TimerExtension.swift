@@ -15,7 +15,7 @@ public extension Timer {
     
     /// Create a timer that will call `block` after interval once.
     class func after(_ interval: TimeInterval, _ block: @escaping (Timer) -> Void) -> Timer {
-        if #available(iOS 10, *) {
+        if #available(iOS 10, tvOS 10.0, *) {
             let timer = Timer.scheduledTimer(withTimeInterval: interval, repeats: false, block: block)
             return timer
         } else {
@@ -31,7 +31,7 @@ public extension Timer {
     
     /// Create a timer that will call `block` every interval.
     class func every(_ interval: TimeInterval, _ block: @escaping (Timer) -> Void) -> Timer {
-        if #available(iOS 10, *) {
+        if #available(iOS 10, tvOS 10.0, *) {
             let timer = Timer.scheduledTimer(withTimeInterval: interval, repeats: true, block: block)
             return timer
         } else {
