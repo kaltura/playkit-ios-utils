@@ -11,25 +11,43 @@
 		20C5C1761F5D8E3E00E588DE /* TimerExtensionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20C5C1751F5D8E3E00E588DE /* TimerExtensionTests.swift */; };
 		20C5C1781F5D919900E588DE /* SynchronizedPropertyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20C5C1771F5D919900E588DE /* SynchronizedPropertyTests.swift */; };
 		20C5C17C1F5DAD3200E588DE /* ResultTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20C5C17B1F5DAD3200E588DE /* ResultTests.swift */; };
+		20EDACF41FAA27E00025000D /* PlayKitUtils_tvOS.h in Headers */ = {isa = PBXBuildFile; fileRef = 20EDACF21FAA27E00025000D /* PlayKitUtils_tvOS.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		20EDACF91FAA280B0025000D /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20EDACF81FAA280B0025000D /* Tests.swift */; };
 		98B8CA2BF8780815E50B19D7 /* Pods_PlayKitUtils_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEEC4A8895E29B68B189C781 /* Pods_PlayKitUtils_Tests.framework */; };
+		BAE6A967B150665B1584E891 /* Pods_PlayKitUtils_tvOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C414E1809712600D2D9A1E7B /* Pods_PlayKitUtils_tvOS.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		08A48774C3D39A897AC71AB9 /* Pods-PlayKitUtils_tvOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PlayKitUtils_tvOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PlayKitUtils_tvOS/Pods-PlayKitUtils_tvOS.debug.xcconfig"; sourceTree = "<group>"; };
 		13840E5B2A4C29F22E6AB25B /* Pods-PlayKitUtils_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PlayKitUtils_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PlayKitUtils_Tests/Pods-PlayKitUtils_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		20A2CC711F6EA4A000EE3355 /* PlayManifestRequestAdapterTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayManifestRequestAdapterTests.swift; sourceTree = "<group>"; };
 		20C5C1751F5D8E3E00E588DE /* TimerExtensionTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimerExtensionTests.swift; sourceTree = "<group>"; };
 		20C5C1771F5D919900E588DE /* SynchronizedPropertyTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SynchronizedPropertyTests.swift; sourceTree = "<group>"; };
 		20C5C17B1F5DAD3200E588DE /* ResultTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResultTests.swift; sourceTree = "<group>"; };
+		20EDACF01FAA27E00025000D /* PlayKitUtils_tvOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = PlayKitUtils_tvOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		20EDACF21FAA27E00025000D /* PlayKitUtils_tvOS.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PlayKitUtils_tvOS.h; sourceTree = "<group>"; };
+		20EDACF31FAA27E00025000D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		20EDACF81FAA280B0025000D /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
 		39B5BFC58259DE87718E9F88 /* PlayKitUtils.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = PlayKitUtils.podspec; path = ../PlayKitUtils.podspec; sourceTree = "<group>"; };
 		607FACE51AFB9204008FA782 /* PlayKitUtils_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PlayKitUtils_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8EAF623DFAD406738F48D4E5 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		9AA9AEBDBD55E67FFCDD5D8F /* Pods-PlayKitUtils_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PlayKitUtils_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-PlayKitUtils_Tests/Pods-PlayKitUtils_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		B469C5C08331D236DECCD103 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		BCE528F44EE22183979371B7 /* Pods-PlayKitUtils_tvOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PlayKitUtils_tvOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-PlayKitUtils_tvOS/Pods-PlayKitUtils_tvOS.release.xcconfig"; sourceTree = "<group>"; };
+		C414E1809712600D2D9A1E7B /* Pods_PlayKitUtils_tvOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PlayKitUtils_tvOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEEC4A8895E29B68B189C781 /* Pods_PlayKitUtils_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PlayKitUtils_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		20EDACEC1FAA27E00025000D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BAE6A967B150665B1584E891 /* Pods_PlayKitUtils_tvOS.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		607FACE21AFB9204008FA782 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -41,11 +59,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		20EDACF11FAA27E00025000D /* PlayKitUtils_tvOS */ = {
+			isa = PBXGroup;
+			children = (
+				20EDACF21FAA27E00025000D /* PlayKitUtils_tvOS.h */,
+				20EDACF31FAA27E00025000D /* Info.plist */,
+				20EDACF81FAA280B0025000D /* Tests.swift */,
+			);
+			path = PlayKitUtils_tvOS;
+			sourceTree = "<group>";
+		};
 		607FACC71AFB9204008FA782 = {
 			isa = PBXGroup;
 			children = (
 				607FACF51AFB993E008FA782 /* Podspec Metadata */,
 				607FACE81AFB9204008FA782 /* Tests */,
+				20EDACF11FAA27E00025000D /* PlayKitUtils_tvOS */,
 				607FACD11AFB9204008FA782 /* Products */,
 				C0796F78031E4FE58F0D09B2 /* Pods */,
 				BEF406A847F388C8C96FA437 /* Frameworks */,
@@ -56,6 +85,7 @@
 			isa = PBXGroup;
 			children = (
 				607FACE51AFB9204008FA782 /* PlayKitUtils_Tests.xctest */,
+				20EDACF01FAA27E00025000D /* PlayKitUtils_tvOS.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -94,6 +124,7 @@
 			isa = PBXGroup;
 			children = (
 				CEEC4A8895E29B68B189C781 /* Pods_PlayKitUtils_Tests.framework */,
+				C414E1809712600D2D9A1E7B /* Pods_PlayKitUtils_tvOS.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -103,13 +134,46 @@
 			children = (
 				13840E5B2A4C29F22E6AB25B /* Pods-PlayKitUtils_Tests.debug.xcconfig */,
 				9AA9AEBDBD55E67FFCDD5D8F /* Pods-PlayKitUtils_Tests.release.xcconfig */,
+				08A48774C3D39A897AC71AB9 /* Pods-PlayKitUtils_tvOS.debug.xcconfig */,
+				BCE528F44EE22183979371B7 /* Pods-PlayKitUtils_tvOS.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
+/* Begin PBXHeadersBuildPhase section */
+		20EDACED1FAA27E00025000D /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				20EDACF41FAA27E00025000D /* PlayKitUtils_tvOS.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
 /* Begin PBXNativeTarget section */
+		20EDACEF1FAA27E00025000D /* PlayKitUtils_tvOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 20EDACF71FAA27E00025000D /* Build configuration list for PBXNativeTarget "PlayKitUtils_tvOS" */;
+			buildPhases = (
+				6650037D3795B1A3DFABF8AD /* [CP] Check Pods Manifest.lock */,
+				20EDACEB1FAA27E00025000D /* Sources */,
+				20EDACEC1FAA27E00025000D /* Frameworks */,
+				20EDACED1FAA27E00025000D /* Headers */,
+				20EDACEE1FAA27E00025000D /* Resources */,
+				627FDBB80BAE245E4F11625D /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PlayKitUtils_tvOS;
+			productName = PlayKitUtils_tvOS;
+			productReference = 20EDACF01FAA27E00025000D /* PlayKitUtils_tvOS.framework */;
+			productType = "com.apple.product-type.framework";
+		};
 		607FACE41AFB9204008FA782 /* PlayKitUtils_Tests */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 607FACF21AFB9204008FA782 /* Build configuration list for PBXNativeTarget "PlayKitUtils_Tests" */;
@@ -140,9 +204,14 @@
 				LastUpgradeCheck = 0820;
 				ORGANIZATIONNAME = CocoaPods;
 				TargetAttributes = {
+					20EDACEF1FAA27E00025000D = {
+						CreatedOnToolsVersion = 9.0.1;
+						LastSwiftMigration = 0900;
+						ProvisioningStyle = Automatic;
+					};
 					607FACE41AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
-						LastSwiftMigration = 0820;
+						LastSwiftMigration = 0900;
 						TestTargetID = 607FACCF1AFB9204008FA782;
 					};
 				};
@@ -161,11 +230,19 @@
 			projectRoot = "";
 			targets = (
 				607FACE41AFB9204008FA782 /* PlayKitUtils_Tests */,
+				20EDACEF1FAA27E00025000D /* PlayKitUtils_tvOS */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		20EDACEE1FAA27E00025000D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		607FACE31AFB9204008FA782 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -189,6 +266,39 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PlayKitUtils_Tests/Pods-PlayKitUtils_Tests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		627FDBB80BAE245E4F11625D /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PlayKitUtils_tvOS/Pods-PlayKitUtils_tvOS-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6650037D3795B1A3DFABF8AD /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PlayKitUtils_tvOS-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 		B60BBF7826E0716BEDC82032 /* [CP] Check Pods Manifest.lock */ = {
@@ -216,14 +326,14 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-PlayKitUtils_Tests/Pods-PlayKitUtils_Tests-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/PlayKitUtils-iOS/PlayKitUtils.framework",
 				"${BUILT_PRODUCTS_DIR}/Nimble/Nimble.framework",
-				"${BUILT_PRODUCTS_DIR}/PlayKitUtils/PlayKitUtils.framework",
 				"${BUILT_PRODUCTS_DIR}/Quick/Quick.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Nimble.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PlayKitUtils.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Nimble.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Quick.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -234,6 +344,14 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		20EDACEB1FAA27E00025000D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				20EDACF91FAA280B0025000D /* Tests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		607FACE11AFB9204008FA782 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -248,6 +366,87 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
+		20EDACF51FAA27E00025000D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 08A48774C3D39A897AC71AB9 /* Pods-PlayKitUtils_tvOS.debug.xcconfig */;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = PlayKitUtils_tvOS/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.kaltura.PlayKitUtils-tvOS";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = appletvos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 9.0;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		20EDACF61FAA27E00025000D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BCE528F44EE22183979371B7 /* Pods-PlayKitUtils_tvOS.release.xcconfig */;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = PlayKitUtils_tvOS/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.kaltura.PlayKitUtils-tvOS";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = appletvos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 9.0;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 		607FACED1AFB9204008FA782 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -351,7 +550,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
 			};
 			name = Debug;
 		};
@@ -367,13 +567,23 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		20EDACF71FAA27E00025000D /* Build configuration list for PBXNativeTarget "PlayKitUtils_tvOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				20EDACF51FAA27E00025000D /* Debug */,
+				20EDACF61FAA27E00025000D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		607FACCB1AFB9204008FA782 /* Build configuration list for PBXProject "PlayKitUtils" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
