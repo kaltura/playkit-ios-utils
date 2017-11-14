@@ -13,7 +13,7 @@ import Foundation
 
 public class PKTimer {
     
-    /// Create a timer that will call `block` after interval once.
+    /// Create a timer that will call `block` after interval only once.
     public static func after(_ interval: TimeInterval, _ block: @escaping (Timer) -> Void) -> Timer {
         if #available(iOS 10, tvOS 10.0, *) {
             let timer = Timer.scheduledTimer(withTimeInterval: interval, repeats: false, block: block)
