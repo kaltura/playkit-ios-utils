@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		20A2CC721F6EA4A000EE3355 /* PlayManifestRequestAdapterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20A2CC711F6EA4A000EE3355 /* PlayManifestRequestAdapterTests.swift */; };
-		20C5C1761F5D8E3E00E588DE /* TimerExtensionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20C5C1751F5D8E3E00E588DE /* TimerExtensionTests.swift */; };
+		20C5C1761F5D8E3E00E588DE /* PKTimerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20C5C1751F5D8E3E00E588DE /* PKTimerTests.swift */; };
 		20C5C1781F5D919900E588DE /* SynchronizedPropertyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20C5C1771F5D919900E588DE /* SynchronizedPropertyTests.swift */; };
 		20C5C17C1F5DAD3200E588DE /* ResultTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20C5C17B1F5DAD3200E588DE /* ResultTests.swift */; };
 		20EDACF41FAA27E00025000D /* PlayKitUtils_tvOS.h in Headers */ = {isa = PBXBuildFile; fileRef = 20EDACF21FAA27E00025000D /* PlayKitUtils_tvOS.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -21,7 +21,7 @@
 		08A48774C3D39A897AC71AB9 /* Pods-PlayKitUtils_tvOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PlayKitUtils_tvOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PlayKitUtils_tvOS/Pods-PlayKitUtils_tvOS.debug.xcconfig"; sourceTree = "<group>"; };
 		13840E5B2A4C29F22E6AB25B /* Pods-PlayKitUtils_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PlayKitUtils_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PlayKitUtils_Tests/Pods-PlayKitUtils_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		20A2CC711F6EA4A000EE3355 /* PlayManifestRequestAdapterTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayManifestRequestAdapterTests.swift; sourceTree = "<group>"; };
-		20C5C1751F5D8E3E00E588DE /* TimerExtensionTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimerExtensionTests.swift; sourceTree = "<group>"; };
+		20C5C1751F5D8E3E00E588DE /* PKTimerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PKTimerTests.swift; sourceTree = "<group>"; };
 		20C5C1771F5D919900E588DE /* SynchronizedPropertyTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SynchronizedPropertyTests.swift; sourceTree = "<group>"; };
 		20C5C17B1F5DAD3200E588DE /* ResultTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResultTests.swift; sourceTree = "<group>"; };
 		20EDACF01FAA27E00025000D /* PlayKitUtils_tvOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = PlayKitUtils_tvOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -94,7 +94,7 @@
 			isa = PBXGroup;
 			children = (
 				607FACE91AFB9204008FA782 /* Supporting Files */,
-				20C5C1751F5D8E3E00E588DE /* TimerExtensionTests.swift */,
+				20C5C1751F5D8E3E00E588DE /* PKTimerTests.swift */,
 				20C5C1771F5D919900E588DE /* SynchronizedPropertyTests.swift */,
 				20C5C17B1F5DAD3200E588DE /* ResultTests.swift */,
 				20A2CC711F6EA4A000EE3355 /* PlayManifestRequestAdapterTests.swift */,
@@ -359,7 +359,7 @@
 				20C5C17C1F5DAD3200E588DE /* ResultTests.swift in Sources */,
 				20C5C1781F5D919900E588DE /* SynchronizedPropertyTests.swift in Sources */,
 				20A2CC721F6EA4A000EE3355 /* PlayManifestRequestAdapterTests.swift in Sources */,
-				20C5C1761F5D8E3E00E588DE /* TimerExtensionTests.swift in Sources */,
+				20C5C1761F5D8E3E00E588DE /* PKTimerTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

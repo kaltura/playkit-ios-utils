@@ -11,10 +11,10 @@
 
 import Foundation
 
-public extension Timer {
+public class PKTimer {
     
-    /// Create a timer that will call `block` after interval once.
-    class func after(_ interval: TimeInterval, _ block: @escaping (Timer) -> Void) -> Timer {
+    /// Create a timer that will call `block` after interval only once.
+    public static func after(_ interval: TimeInterval, _ block: @escaping (Timer) -> Void) -> Timer {
         if #available(iOS 10, tvOS 10.0, *) {
             let timer = Timer.scheduledTimer(withTimeInterval: interval, repeats: false, block: block)
             return timer
@@ -24,13 +24,13 @@ public extension Timer {
             timer = CFRunLoopTimerCreateWithHandler(kCFAllocatorDefault, fireDate, 0, 0, 0) { _ in
                 block(timer)
             }
-            timer.start()
+            RunLoop.main.add(timer, forMode: .defaultRunLoopMode)
             return timer
         }
     }
     
     /// Create a timer that will call `block` every interval.
-    class func every(_ interval: TimeInterval, _ block: @escaping (Timer) -> Void) -> Timer {
+    public static func every(_ interval: TimeInterval, _ block: @escaping (Timer) -> Void) -> Timer {
         if #available(iOS 10, tvOS 10.0, *) {
             let timer = Timer.scheduledTimer(withTimeInterval: interval, repeats: true, block: block)
             return timer
@@ -40,17 +40,8 @@ public extension Timer {
             timer = CFRunLoopTimerCreateWithHandler(kCFAllocatorDefault, fireDate, interval, 0, 0) { _ in
                 block(timer)
             }
-            timer.start()
+            RunLoop.main.add(timer, forMode: .defaultRunLoopMode)
             return timer
-        }
-    }
-    
-    /// starts the timer on the selected RunLoop (default is `.current`) with the provided modes.
-    func start(runLoop: RunLoop = .main, modes: RunLoopMode...) {
-        let modes = modes.isEmpty ? [.defaultRunLoopMode] : modes
-        
-        for mode in modes {
-            runLoop.add(self, forMode: mode)
         }
     }
 }
