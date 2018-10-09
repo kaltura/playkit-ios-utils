@@ -31,9 +31,7 @@ public class PKTimer {
             timer = CFRunLoopTimerCreateWithHandler(kCFAllocatorDefault, fireDate, 0, 0, 0) { _ in
                 block(timer)
             }
-            
             RunLoop.main.add(timer, forMode: defaultRunLoopMode)
-            
             return timer
         }
     }
@@ -49,9 +47,7 @@ public class PKTimer {
             timer = CFRunLoopTimerCreateWithHandler(kCFAllocatorDefault, fireDate, interval, 0, 0) { _ in
                 block(timer)
             }
-            
             RunLoop.main.add(timer, forMode: defaultRunLoopMode)
-            
             return timer
         }
     }
