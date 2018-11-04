@@ -1,7 +1,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'PlayKitUtils'
-  s.version          = '0.1.5'
+  s.version          = '0.1.6'
   s.summary          = 'PlayKitUtils -- utilities framework of common code base for playkit-ios'
   s.homepage         = 'https://github.com/kaltura/playkit-ios-utils'
   s.license          = { :type => 'AGPLv3', :file => 'LICENSE' }
