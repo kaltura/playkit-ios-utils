@@ -14,7 +14,7 @@ import Foundation
 #if swift(>=4.2)
 fileprivate let defaultRunLoopMode: RunLoop.Mode = .default
 #else
-fileprivate let defaultRunLoopMode: RunLoop.Mode = .defaultRunLoopMode
+fileprivate let defaultRunLoopMode: RunLoopMode = .defaultRunLoopMode
 #endif
 
 
