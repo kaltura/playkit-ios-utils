@@ -1,14 +1,15 @@
 use_frameworks!
 
 target 'PlayKitUtils_tvOS' do
+    platform :tvos, '9.0'
     pod 'PlayKitUtils', :path => '../'
 end
 
 target 'PlayKitUtils_Tests' do
-  pod 'PlayKitUtils', :path => '../'
-  
-  pod 'Quick', '1.2.0'
-  pod 'Nimble', '7.0.2'
+    platform :ios, '8.0'
+    pod 'PlayKitUtils', :path => '../'
+    pod 'Quick', '1.2.0'
+    pod 'Nimble', '7.0.2'
 end
 
 post_install do |installer|

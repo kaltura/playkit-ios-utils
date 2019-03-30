@@ -11,8 +11,15 @@
 
 import Foundation
 
+#if swift(>=4.2)
+fileprivate let defaultRunLoopMode: RunLoop.Mode = .default
+#else
+fileprivate let defaultRunLoopMode: RunLoopMode = .defaultRunLoopMode
+#endif
+
+
 public class PKTimer {
-    
+        
     /// Create a timer that will call `block` after interval only once.
     public static func after(_ interval: TimeInterval, _ block: @escaping (Timer) -> Void) -> Timer {
         if #available(iOS 10, tvOS 10.0, *) {
@@ -24,7 +31,7 @@ public class PKTimer {
             timer = CFRunLoopTimerCreateWithHandler(kCFAllocatorDefault, fireDate, 0, 0, 0) { _ in
                 block(timer)
             }
-            RunLoop.main.add(timer, forMode: .defaultRunLoopMode)
+            RunLoop.main.add(timer, forMode: defaultRunLoopMode)
             return timer
         }
     }
@@ -40,7 +47,7 @@ public class PKTimer {
             timer = CFRunLoopTimerCreateWithHandler(kCFAllocatorDefault, fireDate, interval, 0, 0) { _ in
                 block(timer)
             }
-            RunLoop.main.add(timer, forMode: .defaultRunLoopMode)
+            RunLoop.main.add(timer, forMode: defaultRunLoopMode)
             return timer
         }
     }
