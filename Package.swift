@@ -22,9 +22,6 @@ let package = Package(
             name: "PlayKitUtils",
             dependencies: [],
             path: "Sources"
-        ),
-        .testTarget(
-            name: "PlayKitUtilsTests",
-            dependencies: ["PlayKitUtils"]),
+        )
     ]
 )
