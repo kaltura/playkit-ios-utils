@@ -4,7 +4,7 @@ suffix = '.0000'   # Dev mode
 
 Pod::Spec.new do |s|
   s.name             = 'PlayKitUtils'
-  s.version          = '0.4.0' + suffix
+  s.version          = '0.5.0' + suffix
   s.summary          = 'PlayKitUtils -- utilities framework of common code base for playkit-ios'
   s.homepage         = 'https://github.com/kaltura/playkit-ios-utils'
   s.license          = { :type => 'AGPLv3', :file => 'LICENSE' }
