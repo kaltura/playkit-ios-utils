@@ -9,6 +9,7 @@
 import Quick
 import Nimble
 import PlayKitUtils
+import Foundation
 
 class PlayManifestRequestAdapterTests: QuickSpec {
     
