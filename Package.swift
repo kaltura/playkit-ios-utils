@@ -1,4 +1,4 @@
-// swift-tools-version: 5.4
+// swift-tools-version:5.3
 
 import PackageDescription
 
@@ -10,7 +10,7 @@ let package = Package(
                         targets: ["PlayKitUtils"])],
     dependencies: [
         .package(url: "https://github.com/Quick/Quick.git", from: "5.0.0"),
-        .package(url: "https://github.com/Quick/Nimble.git", from: "10.0.0"),
+        .package(url: "https://github.com/Quick/Nimble.git", from: "9.0.0"),
     ],
     targets: [.target(name: "PlayKitUtils",
                       dependencies: [],
