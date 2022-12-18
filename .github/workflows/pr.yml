@@ -32,7 +32,7 @@ jobs:
       run: pod lib lint --fail-fast --verbose --allow-warnings
 
   SPM:
-      name: "Build SPM"
+      name: "Test SPM"
       environment: PR
       runs-on: macos-latest
       strategy:
@@ -41,10 +41,10 @@ jobs:
           include:
             - destination: "OS=16.0,name=iPhone 14 Pro"
               name: "iOS"
-              scheme: "KalturaNetKit"
+              scheme: "PlayKitUtils"
             - destination: "OS=16.0,name=Apple TV"
               name: "tvOS"
-              scheme: "KalturaNetKit"
+              scheme: "PlayKitUtils"
       steps:
         - uses: actions/checkout@v3
         - name: ${{ matrix.name }}
