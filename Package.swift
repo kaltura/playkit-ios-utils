@@ -9,8 +9,8 @@ let package = Package(
     products: [.library(name: "PlayKitUtils",
                         targets: ["PlayKitUtils"])],
     dependencies: [
-        .package(url: "https://github.com/Quick/Quick.git", from: "5.0.0"),
-        .package(url: "https://github.com/Quick/Nimble.git", from: "9.0.0"),
+        .package(url: "https://github.com/Quick/Quick.git", .upToNextMajor(from: "5.0.0")),
+        .package(url: "https://github.com/Quick/Nimble.git", .upToNextMajor(from: "9.0.0")),
     ],
     targets: [.target(name: "PlayKitUtils",
                       dependencies: [],
