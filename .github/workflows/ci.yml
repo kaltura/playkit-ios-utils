@@ -31,7 +31,7 @@ jobs:
     - name: Pod linting
       run: pod lib lint --fail-fast --verbose --allow-warnings
 
-SPM:
+  SPM:
       name: "Test SPM"
       runs-on: macos-latest
 
