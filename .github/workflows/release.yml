@@ -28,7 +28,8 @@ jobs:
   TAGGING:
     runs-on: macos-latest
     environment: Tag
-
+    needs: SPM
+    
     outputs:
       output1: ${{ steps.tagging.outputs.tag }}
         
