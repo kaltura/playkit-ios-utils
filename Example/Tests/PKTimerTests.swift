@@ -9,6 +9,7 @@
 import Quick
 import Nimble
 import PlayKitUtils
+import Foundation
 
 class PKTimerTests: QuickSpec {
     override func spec() {
@@ -36,7 +37,7 @@ class PKTimerTests: QuickSpec {
                     print("current value: \(value)")
                 }
                 // timeout is 1 then we will able to increase the value 4 times.
-                expect(value).toEventually(equal(4), timeout: 1)
+                expect(value).toEventually(equal(4), timeout: .seconds(1))
             }
         }
     }
